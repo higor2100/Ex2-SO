@@ -1,0 +1,201 @@
+execve("/usr/bin/gcc", ["gcc", "main.c"], 0x7ffc495a9968 /* 29 vars */) = 0
+brk(NULL)                               = 0xe24000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=26896, ...}) = 0
+mmap(NULL, 26896, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fab15f0c000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\34\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2030544, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fab15f0a000
+mmap(NULL, 4131552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fab158fb000
+mprotect(0x7fab15ae2000, 2097152, PROT_NONE) = 0
+mmap(0x7fab15ce2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7fab15ce2000
+mmap(0x7fab15ce8000, 15072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fab15ce8000
+close(3)                                = 0
+arch_prctl(ARCH_SET_FS, 0x7fab15f0b580) = 0
+mprotect(0x7fab15ce2000, 16384, PROT_READ) = 0
+mprotect(0x6fb000, 12288, PROT_READ)    = 0
+mprotect(0x7fab15f13000, 4096, PROT_READ) = 0
+munmap(0x7fab15f0c000, 26896)           = 0
+brk(NULL)                               = 0xe24000
+brk(0xe45000)                           = 0xe45000
+brk(0xe69000)                           = 0xe69000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3008640, ...}) = 0
+mmap(NULL, 3008640, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fab1561c000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2995, ...}) = 0
+read(3, "# Locale name alias data base.\n#"..., 4096) = 2995
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/share/locale/en_CA.UTF-8/LC_MESSAGES/gcc-7.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/en_CA.utf8/LC_MESSAGES/gcc-7.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/en_CA/LC_MESSAGES/gcc-7.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/en.UTF-8/LC_MESSAGES/gcc-7.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/en.utf8/LC_MESSAGES/gcc-7.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/en/LC_MESSAGES/gcc-7.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en_CA.UTF-8/LC_MESSAGES/gcc-7.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en_CA.utf8/LC_MESSAGES/gcc-7.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en_CA/LC_MESSAGES/gcc-7.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en.UTF-8/LC_MESSAGES/gcc-7.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en.utf8/LC_MESSAGES/gcc-7.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en/LC_MESSAGES/gcc-7.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TIOCGWINSZ, {ws_row=33, ws_col=225, ws_xpixel=0, ws_ypixel=0}) = 0
+ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab15939fd0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x40b16f, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab15939fd0}, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab15939fd0}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab15939fd0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x40b16f, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab15939fd0}, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab15939fd0}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=SIG_IGN, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab15939fd0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x40b16f, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab15939fd0}, {sa_handler=SIG_IGN, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab15939fd0}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab15939fd0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=0x40b16f, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab15939fd0}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab15939fd0}, 8) = 0
+rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[CHLD], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fab15939fd0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_STACK, {rlim_cur=65536*1024, rlim_max=RLIM64_INFINITY}, NULL) = 0
+access("/home/xray/.vscode-server/bin/a0479759d6e9ea56afa657e454193f72aef85bd0/bin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+access("/home/xray/.vscode-server/bin/a0479759d6e9ea56afa657e454193f72aef85bd0/bin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+access("/usr/local/sbin/gcc", X_OK)     = -1 ENOENT (No such file or directory)
+access("/usr/local/bin/gcc", X_OK)      = -1 ENOENT (No such file or directory)
+access("/usr/sbin/gcc", X_OK)           = -1 ENOENT (No such file or directory)
+access("/usr/bin/gcc", X_OK)            = 0
+stat("/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=1047488, ...}) = 0
+lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/usr/bin", {st_mode=S_IFDIR|0755, st_size=28672, ...}) = 0
+lstat("/usr/bin/gcc", {st_mode=S_IFLNK|0777, st_size=5, ...}) = 0
+readlink("/usr/bin/gcc", "gcc-7", 4095) = 5
+lstat("/usr/bin/gcc-7", {st_mode=S_IFLNK|0777, st_size=22, ...}) = 0
+readlink("/usr/bin/gcc-7", "x86_64-linux-gnu-gcc-7", 4095) = 22
+lstat("/usr/bin/x86_64-linux-gnu-gcc-7", {st_mode=S_IFREG|0755, st_size=1047488, ...}) = 0
+access("/home/xray/.vscode-server/bin/a0479759d6e9ea56afa657e454193f72aef85bd0/bin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+access("/home/xray/.vscode-server/bin/a0479759d6e9ea56afa657e454193f72aef85bd0/bin/gcc", X_OK) = -1 ENOENT (No such file or directory)
+access("/usr/local/sbin/gcc", X_OK)     = -1 ENOENT (No such file or directory)
+access("/usr/local/bin/gcc", X_OK)      = -1 ENOENT (No such file or directory)
+access("/usr/sbin/gcc", X_OK)           = -1 ENOENT (No such file or directory)
+access("/usr/bin/gcc", X_OK)            = 0
+stat("/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=1047488, ...}) = 0
+lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/usr/bin", {st_mode=S_IFDIR|0755, st_size=28672, ...}) = 0
+lstat("/usr/bin/gcc", {st_mode=S_IFLNK|0777, st_size=5, ...}) = 0
+readlink("/usr/bin/gcc", "gcc-7", 4095) = 5
+lstat("/usr/bin/gcc-7", {st_mode=S_IFLNK|0777, st_size=22, ...}) = 0
+readlink("/usr/bin/gcc-7", "x86_64-linux-gnu-gcc-7", 4095) = 22
+lstat("/usr/bin/x86_64-linux-gnu-gcc-7", {st_mode=S_IFREG|0755, st_size=1047488, ...}) = 0
+access("main.c", F_OK)                  = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/7/", X_OK) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/7/", X_OK) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/7/specs", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/7/specs", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/specs", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/specs", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/", X_OK) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper", {st_mode=S_IFREG|0755, st_size=913720, ...}) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper", X_OK) = 0
+access("/tmp", R_OK|W_OK|X_OK)          = 0
+getpid()                                = 27685
+openat(AT_FDCWD, "/tmp/ccX40mOT.s", O_RDWR|O_CREAT|O_EXCL, 0600) = 3
+close(3)                                = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/cc1", {st_mode=S_IFREG|0755, st_size=23505712, ...}) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/7/cc1", X_OK) = 0
+vfork()                                 = 27686
+wait4(27686, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 27686
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=27686, si_uid=1025, si_status=0, si_utime=1, si_stime=0} ---
+getpid()                                = 27685
+openat(AT_FDCWD, "/tmp/ccMC89sc.o", O_RDWR|O_CREAT|O_EXCL, 0600) = 3
+close(3)                                = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/as", 0x7fffbfefeed0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/as", 0x7fffbfefeed0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/as", 0x7fffbfefeed0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/as", 0x7fffbfefeed0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/as", 0x7fffbfefeed0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/7/as", 0x7fffbfefeed0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/as", 0x7fffbfefeed0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/as", 0x7fffbfefeed0) = -1 ENOENT (No such file or directory)
+vfork()                                 = 27687
+wait4(27687, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 27687
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=27687, si_uid=1025, si_status=0, si_utime=0, si_stime=0} ---
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/collect2", {st_mode=S_IFREG|0755, st_size=585952, ...}) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/7/collect2", X_OK) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so", R_OK) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/7/.", 0x7fffbfefef60) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/.", 0x7fffbfefef60) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/.", 0x7fffbfefef60) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/7/.", 0x7fffbfefef60) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/.", 0x7fffbfefef60) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/../lib/.", 0x7fffbfefef60) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/7/.", 0x7fffbfefef60) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/lib/x86_64-linux-gnu/7/.", 0x7fffbfefef60) = -1 ENOENT (No such file or directory)
+stat("/lib/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+stat("/lib/../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/x86_64-linux-gnu/7/.", 0x7fffbfefef60) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/.", 0x7fffbfefef60) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getpid()                                = 27685
+openat(AT_FDCWD, "/tmp/ccotp79u.res", O_RDWR|O_CREAT|O_EXCL, 0600) = 3
+close(3)                                = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/7/Scrt1.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/7/Scrt1.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/Scrt1.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/../lib/Scrt1.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/7/Scrt1.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o", R_OK) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/7/crti.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/7/crti.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/crti.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/../lib/crti.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/7/crti.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o", R_OK) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o", R_OK) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/7/.", 0x7fffbfefe1c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/.", 0x7fffbfefe1c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/../lib/.", 0x7fffbfefe1c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/7/.", 0x7fffbfefe1c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/lib/x86_64-linux-gnu/7/.", 0x7fffbfefe1c0) = -1 ENOENT (No such file or directory)
+stat("/lib/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=16384, ...}) = 0
+stat("/lib/../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/x86_64-linux-gnu/7/.", 0x7fffbfefe1c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/x86_64-linux-gnu/.", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/../lib/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/.", 0x7fffbfefe1c0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/../../../.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o", R_OK) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/7/crtn.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/7/crtn.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/crtn.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/../lib/crtn.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/7/crtn.o", R_OK) = -1 ENOENT (No such file or directory)
+access("/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o", R_OK) = 0
+stat("/usr/lib/gcc/x86_64-linux-gnu/7/collect2", {st_mode=S_IFREG|0755, st_size=585952, ...}) = 0
+access("/usr/lib/gcc/x86_64-linux-gnu/7/collect2", X_OK) = 0
+vfork()                                 = 27688
+wait4(27688, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 27688
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=27688, si_uid=1025, si_status=0, si_utime=0, si_stime=0} ---
+stat("/tmp/ccotp79u.res", {st_mode=S_IFREG|0600, st_size=0, ...}) = 0
+unlink("/tmp/ccotp79u.res")             = 0
+stat("/tmp/ccMC89sc.o", {st_mode=S_IFREG|0600, st_size=1552, ...}) = 0
+unlink("/tmp/ccMC89sc.o")               = 0
+stat("/tmp/ccX40mOT.s", {st_mode=S_IFREG|0600, st_size=476, ...}) = 0
+unlink("/tmp/ccX40mOT.s")               = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
