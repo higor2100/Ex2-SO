@@ -5,7 +5,7 @@
 
 int main(void) {
 
-   struct utsname buffer;
+   struct  utsname buffer;
 
    errno = 0;
    if (uname(&buffer) != 0) {
@@ -13,14 +13,14 @@ int main(void) {
       exit(EXIT_FAILURE);
    }
 
-   printf("system name = %s\n", buffer.sysname);
-   printf("node name   = %s\n", buffer.nodename);
-   printf("release     = %s\n", buffer.release);
-   printf("version     = %s\n", buffer.version);
-   printf("machine     = %s\n", buffer.machine);
+   printf("Nome do Sistema = %s\n", buffer.sysname);
+   printf("Nome do nó   = %s\n", buffer.nodename);
+   printf("Release     = %s\n", buffer.release);
+   printf("Versão     = %s\n", buffer.version);
+   printf("Arquitetura     = %s\n", buffer.machine);
 
    #ifdef _GNU_SOURCE
-      printf("domain name = %s\n", buffer.domainname);
+      printf("Nome de dominio = %s\n", buffer.domainname);
    #endif
 
    return EXIT_SUCCESS;
